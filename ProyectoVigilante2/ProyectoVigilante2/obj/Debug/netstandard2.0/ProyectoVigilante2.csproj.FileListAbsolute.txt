@@ -1,0 +1,15 @@
+C:\Users\93764\source\repos\ProyectoVigilante2\ProyectoVigilante2\ProyectoVigilante2\bin\Debug\netstandard2.0\ProyectoVigilante2.deps.json
+C:\Users\93764\source\repos\ProyectoVigilante2\ProyectoVigilante2\ProyectoVigilante2\bin\Debug\netstandard2.0\ProyectoVigilante2.dll
+C:\Users\93764\source\repos\ProyectoVigilante2\ProyectoVigilante2\ProyectoVigilante2\bin\Debug\netstandard2.0\ref\ProyectoVigilante2.dll
+C:\Users\93764\source\repos\ProyectoVigilante2\ProyectoVigilante2\ProyectoVigilante2\bin\Debug\netstandard2.0\ProyectoVigilante2.pdb
+C:\Users\93764\source\repos\ProyectoVigilante2\ProyectoVigilante2\ProyectoVigilante2\obj\Debug\netstandard2.0\ProyectoVigilante2.csproj.AssemblyReference.cache
+C:\Users\93764\source\repos\ProyectoVigilante2\ProyectoVigilante2\ProyectoVigilante2\obj\Debug\netstandard2.0\ProyectoVigilante2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\93764\source\repos\ProyectoVigilante2\ProyectoVigilante2\ProyectoVigilante2\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\93764\source\repos\ProyectoVigilante2\ProyectoVigilante2\ProyectoVigilante2\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Users\93764\source\repos\ProyectoVigilante2\ProyectoVigilante2\ProyectoVigilante2\obj\Debug\netstandard2.0\ProyectoVigilante2.AssemblyInfoInputs.cache
+C:\Users\93764\source\repos\ProyectoVigilante2\ProyectoVigilante2\ProyectoVigilante2\obj\Debug\netstandard2.0\ProyectoVigilante2.AssemblyInfo.cs
+C:\Users\93764\source\repos\ProyectoVigilante2\ProyectoVigilante2\ProyectoVigilante2\obj\Debug\netstandard2.0\ProyectoVigilante2.csproj.CoreCompileInputs.cache
+C:\Users\93764\source\repos\ProyectoVigilante2\ProyectoVigilante2\ProyectoVigilante2\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\93764\source\repos\ProyectoVigilante2\ProyectoVigilante2\ProyectoVigilante2\obj\Debug\netstandard2.0\ProyectoVigilante2.dll
+C:\Users\93764\source\repos\ProyectoVigilante2\ProyectoVigilante2\ProyectoVigilante2\obj\Debug\netstandard2.0\ref\ProyectoVigilante2.dll
+C:\Users\93764\source\repos\ProyectoVigilante2\ProyectoVigilante2\ProyectoVigilante2\obj\Debug\netstandard2.0\ProyectoVigilante2.pdb
