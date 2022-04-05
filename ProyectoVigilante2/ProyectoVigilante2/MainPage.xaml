@@ -4,21 +4,26 @@
              x:Class="ProyectoVigilante2.MainPage">
 
     <StackLayout>
-        <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
-            <Label Text="Welcome to Xamarin.Forms!" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+        <Frame BackgroundColor="Black" Padding="24" CornerRadius="0">
+            <Label Text="Collins Aerospace" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
         </Frame>
-        <Label Text="Start developing now" FontSize="Title" Padding="30,10,30,10"/>
-        <Label Text="Make changes to your XAML file and save to see your UI update in the running app with XAML Hot Reload. Give it a try! :)" FontSize="16" Padding="30,0,30,0"/>
+        <Label Text="Bienvenido a Vigilante" TextColor="Black" HorizontalTextAlignment="Center" FontSize="Title" Padding="30,10,30,10"/>
+        <Label Text="El programa para mejorar tu seguridad :)" HorizontalTextAlignment="Center" FontSize="16" Padding="30,0,30,0"/>
         <Label FontSize="16" Padding="30,24,30,0">
             <Label.FormattedText>
                 <FormattedString>
                     <FormattedString.Spans>
-                        <Span Text="Learn more at "/>
-                        <Span Text="https://aka.ms/xamarin-quickstart" FontAttributes="Bold"/>
+                        <Span Text="Ingresa en tu cuenta para contestar el formulario."/>
                     </FormattedString.Spans>
                 </FormattedString>
             </Label.FormattedText>
         </Label>
+        <Label Text="ID" FontSize="22" FontAttributes="Bold" HorizontalTextAlignment="Start" Margin="50,20,0,0"></Label>
+        <Entry ClearButtonVisibility="WhileEditing" Keyboard="Numeric" MaxLength="12" Margin="50,10,50,20" BackgroundColor="LightGreen"></Entry>
+        <Label Text="Contraseña" FontSize="22" FontAttributes="Bold" HorizontalTextAlignment="Start" Margin="50,20,0,0"></Label>
+        <Entry IsPassword="True" ClearButtonVisibility="WhileEditing" Keyboard="Text" Margin="50,10,50,20" BackgroundColor="LightGreen"></Entry>
+        <Button Text="INGRESAR" Margin="10,20,10,0" BackgroundColor="ForestGreen" 
+                FontAttributes="Bold" WidthRequest="120" HorizontalOptions="Center"></Button>
     </StackLayout>
 
 </ContentPage>
