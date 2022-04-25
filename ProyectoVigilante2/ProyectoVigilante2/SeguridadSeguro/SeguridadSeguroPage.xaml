@@ -30,22 +30,25 @@
                     </Label.FormattedText>
                 </Label>
 
-                <StackLayout RadioButtonGroup.GroupName="SeguridadInseguroDatos"
+                <StackLayout RadioButtonGroup.GroupName="SeguridadSeguroDatos"
                  Orientation="Vertical">
-                    <RadioButton Content="Usa el equipo de EPP correctamente, completo y bien ajustado"/>
-                    <RadioButton Content="HSe detiene para hablar o mensajear por celular"/>
-                    <RadioButton Content="Conduce de manera segura el vehículo personal o industrial"/>
-                    <RadioButton Content="Mantiene ojos y mente en la tarea 'Safe Start'"/>
-                    <RadioButton Content="Camina de manera segura dentro del estacionamiento y/o edificio"/>
-                    <RadioButton Content="Cuenta con permisos de trabajo de alto riesgo"/>
-                    <RadioButton Content="Realiza correcto lavado de manos/utiliza gel antibacterial"/>
-                    <RadioButton Content="Mantiene la distancia social adecuada (2 metros)"/>
-                    <RadioButton Content="Desinfecta correctamente su área de trabajo"/>
-                    <RadioButton Content="Realiza el estornudo de etiqueta"/>
+                    <RadioButton Content="Usa el equipo de EPP correctamente, completo y bien ajustado" CheckedChanged="RadioButton_CheckedChanged"/>
+                    <RadioButton Content="Se detiene para hablar o mensajear por celular" CheckedChanged="RadioButton_CheckedChanged"/>
+                    <RadioButton Content="Conduce de manera segura el vehículo personal o industrial" CheckedChanged="RadioButton_CheckedChanged"/>
+                    <RadioButton Content="Mantiene ojos y mente en la tarea 'Safe Start'" CheckedChanged="RadioButton_CheckedChanged"/>
+                    <RadioButton Content="Camina de manera segura dentro del estacionamiento y/o edificio" CheckedChanged="RadioButton_CheckedChanged"/>
+                    <RadioButton Content="Cuenta con permisos de trabajo de alto riesgo" CheckedChanged="RadioButton_CheckedChanged"/>
+                    <RadioButton Content="Realiza correcto lavado de manos/utiliza gel antibacterial" CheckedChanged="RadioButton_CheckedChanged"/>
+                    <RadioButton Content="Mantiene la distancia social adecuada (2 metros)" CheckedChanged="RadioButton_CheckedChanged"/>
+                    <RadioButton Content="Desinfecta correctamente su área de trabajo" CheckedChanged="RadioButton_CheckedChanged"/>
+                    <RadioButton Content="Realiza el estornudo de etiqueta" CheckedChanged="RadioButton_CheckedChanged"/>
                     <RadioButton Content="Otro" CheckedChanged="RadioButton_CheckedChanged"/>
-                    <Entry x:Name="Otro" Keyboard="Text" Completed="Otro_Completed" IsEnabled="False" Margin="25,0,25,0"/>
-
+                    <Entry x:Name="Otro" Keyboard="Text" Completed="Otro_Completed" IsVisible="False" Margin="25,0,25,0"/>
                 </StackLayout>
+                
+                <Button Text="Siguiente" Margin="10,20,10,20" BackgroundColor="#28B463" 
+                FontAttributes="Bold" WidthRequest="120" HorizontalOptions="Center" Clicked="Button_Clicked"></Button>
+                
             </StackLayout>
         </ScrollView>
     </ContentPage.Content>

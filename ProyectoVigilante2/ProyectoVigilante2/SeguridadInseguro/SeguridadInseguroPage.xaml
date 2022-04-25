@@ -32,18 +32,18 @@
 
             <StackLayout RadioButtonGroup.GroupName="SeguridadInseguroDatos"
                  Orientation="Vertical">
-                <RadioButton Content="Uso inadecuado de EPP (Lentes, calzado, tapones, etc.)"/>
-                <RadioButton Content="Habla o mensajea por celular mientras camina"/>
-                <RadioButton Content="Conduce de manera insegura el vehículo personal o industrial"/>
-                <RadioButton Content="Uso inapropiado de herramientas (herramienta hechiza)"/>
-                <RadioButton Content="Camina de manera insegura dentro del estacionamiento y/o edificio"/>
-                <RadioButton Content="Manipulación y/o carga inadecuada de material"/>
-                <RadioButton Content="No realiza correcto lavado de manos/utiliza gel antibacterial"/>
-                <RadioButton Content="No mantiene la distancia social adecuada (2 metros)"/>
-                <RadioButton Content="No desinfecta correctamente su área de trabajo"/>
-                <RadioButton Content="No realiza el estornudo de etiqueta"/>
+                    <RadioButton Content="Uso inadecuado de EPP (Lentes, calzado, tapones, etc.)" CheckedChanged="RadioButton_CheckedChanged"/>
+                    <RadioButton Content="Habla o mensajea por celular mientras camina" CheckedChanged="RadioButton_CheckedChanged"/>
+                    <RadioButton Content="Conduce de manera insegura el vehículo personal o industrial" CheckedChanged="RadioButton_CheckedChanged"/>
+                    <RadioButton Content="Uso inapropiado de herramientas (herramienta hechiza)" CheckedChanged="RadioButton_CheckedChanged"/>
+                    <RadioButton Content="Camina de manera insegura dentro del estacionamiento y/o edificio" CheckedChanged="RadioButton_CheckedChanged"/>
+                    <RadioButton Content="Manipulación y/o carga inadecuada de material" CheckedChanged="RadioButton_CheckedChanged"/>
+                    <RadioButton Content="No realiza correcto lavado de manos/utiliza gel antibacterial" CheckedChanged="RadioButton_CheckedChanged"/>
+                    <RadioButton Content="No mantiene la distancia social adecuada (2 metros)" CheckedChanged="RadioButton_CheckedChanged"/>
+                    <RadioButton Content="No desinfecta correctamente su área de trabajo" CheckedChanged="RadioButton_CheckedChanged"/>
+                    <RadioButton Content="No realiza el estornudo de etiqueta" CheckedChanged="RadioButton_CheckedChanged"/>
                 <RadioButton Content="Otro" CheckedChanged="RadioButton_CheckedChanged"/>
-                <Entry x:Name="Otro" Keyboard="Text" Completed="Otro_Completed" IsEnabled="False" Margin="25,0,25,0"/>
+                <Entry x:Name="Otro" Keyboard="Text" Completed="Otro_Completed" IsVisible="False" Margin="25,0,25,0"/>
 
                 </StackLayout>
 
@@ -120,7 +120,7 @@
                 </Grid>
 
                 <Button Text="Siguiente" Margin="10,20,10,20" BackgroundColor="#28B463" 
-                FontAttributes="Bold" WidthRequest="120" HorizontalOptions="Center"></Button>
+                FontAttributes="Bold" WidthRequest="120" HorizontalOptions="Center" Clicked="Button_Clicked"></Button>
             
             </StackLayout>
             

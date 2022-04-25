@@ -2,11 +2,48 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="ProyectoVigilante2.AmbientalSeguro.AmbientalSeguroPage">
-    <ContentPage.Content>
+    <NavigationPage.TitleView>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <Label Text="Collins Aerospace - Vigilante" HorizontalTextAlignment="Center" FontSize="15" Margin="0, 0, 75, 0"></Label>
         </StackLayout>
+    </NavigationPage.TitleView>
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+                <Frame BackgroundColor="Black" Padding="10" CornerRadius="0">
+                    <StackLayout>
+                        <Label Text="{Binding Name, StringFormat='Nombre: {0}'}" TextColor="White" FontAttributes="Bold"/>
+                        <Label Text="{Binding Area, StringFormat='Área: {0}'}" TextColor="White"/>
+                        <Label Text="{Binding TL, StringFormat='TL: {0}'}" TextColor="White"/>
+                    </StackLayout>
+                </Frame>
+                <ProgressBar Progress="0.60" ProgressColor="Orange"/>
+
+                <Label FontSize="20" Padding="15,14,15,14" HorizontalTextAlignment="Center">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <FormattedString.Spans>
+                                <Span Text="¿Qué se observó?" FontAttributes="Bold" FontSize="20"/>
+                            </FormattedString.Spans>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+
+                <StackLayout RadioButtonGroup.GroupName="AmbientalSeguroDatos"
+                 Orientation="Vertical">
+                    <RadioButton Content="Evita el consumo de materiales" CheckedChanged="RadioButton_CheckedChanged"/>
+                    <RadioButton Content="Evita la generación de residuos" CheckedChanged="RadioButton_CheckedChanged"/>
+                    <RadioButton Content="Separa correctamente los residuos" CheckedChanged="RadioButton_CheckedChanged"/>
+                    <RadioButton Content="Uso eficiente de energía (gas, electricidad, aire comprimido)" CheckedChanged="RadioButton_CheckedChanged"/>
+                    <RadioButton Content="Reporta fugas de agua, gas, aire comprimido" CheckedChanged="RadioButton_CheckedChanged"/>
+                    <RadioButton Content="Reutiliza materiales" CheckedChanged="RadioButton_CheckedChanged"/>
+                    <RadioButton Content="Otro" CheckedChanged="RadioButton_CheckedChanged"/>
+                    <Entry x:Name="Otro" Keyboard="Text" Completed="Otro_Completed" IsVisible="False" Margin="25,0,25,0"/>
+                </StackLayout>
+
+                <Button Text="Siguiente" Margin="10,20,10,20" BackgroundColor="#28B463" 
+                FontAttributes="Bold" WidthRequest="120" HorizontalOptions="Center" Clicked="Button_Clicked"></Button>
+            </StackLayout>
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>

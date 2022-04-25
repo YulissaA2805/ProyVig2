@@ -29,10 +29,20 @@ namespace ProyectoVigilante2
         {
             RadioButton rbtn = (RadioButton)sender;
 
-            if (rbtn.Content.Equals("Otro") && rbtn.IsChecked)
+            if (rbtn.Content.Equals("Otro"))
             {
-                Otro.IsEnabled = false;
+                Otro.IsVisible = true;
             }
+            else
+            {
+                Otro.IsVisible = false;
+                Otro.Text = "";
+            }
+        }
+
+        private void Button_Clicked(object sender, EventArgs e)
+        {
+            this.Navigation.PushAsync(new Page4(_user));
         }
     }
 }
