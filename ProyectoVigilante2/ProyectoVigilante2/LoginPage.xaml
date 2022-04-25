@@ -19,11 +19,11 @@
             </Label.FormattedText>
         </Label>
         <Label Text="ID" FontSize="22" FontAttributes="Bold" HorizontalTextAlignment="Start" Margin="50,20,0,0"></Label>
-        <Entry ClearButtonVisibility="WhileEditing" Keyboard="Numeric" MaxLength="12" Margin="50,10,50,20" BackgroundColor="LightGreen"></Entry>
+        <Entry x:Name="entryID" ClearButtonVisibility="WhileEditing" Keyboard="Numeric" MaxLength="12" Margin="50,10,50,20" BackgroundColor="LightGreen"></Entry>
         <Label Text="Contraseña" FontSize="22" FontAttributes="Bold" HorizontalTextAlignment="Start" Margin="50,20,0,0"></Label>
-        <Entry IsPassword="True" ClearButtonVisibility="WhileEditing" Keyboard="Text" Margin="50,10,50,20" BackgroundColor="LightGreen"></Entry>
-        <Button Text="INGRESAR" Margin="10,20,10,0" BackgroundColor="ForestGreen" 
-                FontAttributes="Bold" WidthRequest="120" HorizontalOptions="Center"></Button>
+        <Entry x:Name="entryPassword" IsPassword="True" ClearButtonVisibility="WhileEditing" Keyboard="Text" Margin="50,10,50,20" BackgroundColor="LightGreen"></Entry>
+        <Button Text="INGRESAR" Margin="10,20,10,0" BackgroundColor="#28B463" 
+                FontAttributes="Bold" WidthRequest="120" HorizontalOptions="Center" Clicked="Button_Clicked"></Button>
     </StackLayout>
 
 </ContentPage>

@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ProyectoVigilante2.Page2">
+    <NavigationPage.TitleView>
+        <StackLayout>
+            <Label Text="Collins Aerospace - Vigilante" HorizontalTextAlignment="Center" FontSize="15" Margin="0, 0, 75, 0"></Label>
+        </StackLayout>
+    </NavigationPage.TitleView>
+    <ContentPage.Content>
+        <StackLayout>
+
+            <Frame BackgroundColor="Black" Padding="10" CornerRadius="0">
+                <StackLayout>
+                    <Label Text="{Binding Name, StringFormat='Nombre: {0}'}" TextColor="White" FontAttributes="Bold"/>
+                    <Label Text="{Binding Area, StringFormat='Área: {0}'}" TextColor="White"/>
+                    <Label Text="{Binding TL, StringFormat='TL: {0}'}" TextColor="White"/>
+                </StackLayout>
+            </Frame>
+            <ProgressBar Progress="0.40" ProgressColor="Orange"/>
+
+            <Label FontSize="20" Padding="15,14,15,14" HorizontalTextAlignment="Center">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <FormattedString.Spans>
+                            <Span Text="¿Cómo se clasifica el comportamiento?" FontAttributes="Bold" FontSize="20"/>
+                        </FormattedString.Spans>
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+
+            <StackLayout RadioButtonGroup.GroupName="comportamiento1"
+                 x:Name="radioGroupComportamiento1" Orientation="Vertical">
+                <RadioButton Value="Seguridad" Content="Seguridad" CheckedChanged="RadioButtonCheckedChanged"/>
+                <RadioButton Value="Ambiental" Content="Ambiental" CheckedChanged="RadioButtonCheckedChanged"/>
+            </StackLayout>
+
+            <Label FontSize="20" Padding="15,14,15,14" HorizontalTextAlignment="Center">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <FormattedString.Spans>
+                            <Span Text="¿Qué tipo de comportamiento fue?" FontAttributes="Bold" FontSize="20"/>
+                        </FormattedString.Spans>
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+
+            <StackLayout RadioButtonGroup.GroupName="comportamiento2"
+                 x:Name="radioGroupComportamiento2" Orientation="Vertical">
+                <RadioButton Value="Inseguro" Content="Inseguro" CheckedChanged="RadioButtonCheckedChanged"/>
+                <RadioButton Value="Seguro" Content="Seguro" CheckedChanged="RadioButtonCheckedChanged"/>
+            </StackLayout>
+
+            <Button Text="Siguiente" Margin="10,20,10,20" BackgroundColor="#28B463" 
+                FontAttributes="Bold" WidthRequest="120" HorizontalOptions="Center" Clicked="Button_Clicked"></Button>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

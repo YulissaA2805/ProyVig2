@@ -1,0 +1,128 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ProyectoVigilante2.SeguridadInseguroPage">
+    <NavigationPage.TitleView>
+        <StackLayout>
+            <Label Text="Collins Aerospace - Vigilante" HorizontalTextAlignment="Center" FontSize="15" Margin="0, 0, 75, 0"></Label>
+        </StackLayout>
+    </NavigationPage.TitleView>
+    <ContentPage.Content>
+        <ScrollView>
+        <StackLayout>
+            
+            <Frame BackgroundColor="Black" Padding="10" CornerRadius="0">
+                <StackLayout>
+                    <Label Text="{Binding Name, StringFormat='Nombre: {0}'}" TextColor="White" FontAttributes="Bold"/>
+                    <Label Text="{Binding Area, StringFormat='Área: {0}'}" TextColor="White"/>
+                    <Label Text="{Binding TL, StringFormat='TL: {0}'}" TextColor="White"/>
+                </StackLayout>
+            </Frame>
+            <ProgressBar Progress="0.60" ProgressColor="Orange"/>
+
+            <Label FontSize="20" Padding="15,14,15,14" HorizontalTextAlignment="Center">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <FormattedString.Spans>
+                            <Span Text="¿Qué se observó?" FontAttributes="Bold" FontSize="20"/>
+                        </FormattedString.Spans>
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+
+            <StackLayout RadioButtonGroup.GroupName="SeguridadInseguroDatos"
+                 Orientation="Vertical">
+                <RadioButton Content="Uso inadecuado de EPP (Lentes, calzado, tapones, etc.)"/>
+                <RadioButton Content="Habla o mensajea por celular mientras camina"/>
+                <RadioButton Content="Conduce de manera insegura el vehículo personal o industrial"/>
+                <RadioButton Content="Uso inapropiado de herramientas (herramienta hechiza)"/>
+                <RadioButton Content="Camina de manera insegura dentro del estacionamiento y/o edificio"/>
+                <RadioButton Content="Manipulación y/o carga inadecuada de material"/>
+                <RadioButton Content="No realiza correcto lavado de manos/utiliza gel antibacterial"/>
+                <RadioButton Content="No mantiene la distancia social adecuada (2 metros)"/>
+                <RadioButton Content="No desinfecta correctamente su área de trabajo"/>
+                <RadioButton Content="No realiza el estornudo de etiqueta"/>
+                <RadioButton Content="Otro" CheckedChanged="RadioButton_CheckedChanged"/>
+                <Entry x:Name="Otro" Keyboard="Text" Completed="Otro_Completed" IsEnabled="False" Margin="25,0,25,0"/>
+                </StackLayout>
+
+            <Label Text="Identifica el Estado" FontAttributes="Bold" FontSize="20" Margin="10,10,10,10">
+            </Label>
+
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="30"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+
+                    <CheckBox x:Name="cbEstado1" Grid.Row="0" Grid.Column="0"></CheckBox>
+                    <Label Text="Complacencia" FontSize="18" Grid.Row="0" Grid.Column="1"></Label>
+                    
+                    <CheckBox x:Name="cbEstado2" Grid.Row="1" Grid.Column="0"></CheckBox>
+                    <Label Text="Frustración" FontSize="18" Grid.Row="1" Grid.Column="1"></Label>
+
+                    <CheckBox x:Name="cbEstado3" Grid.Row="2" Grid.Column="0"></CheckBox>
+                    <Label Text="Fatiga" FontSize="18" Grid.Row="2" Grid.Column="1"></Label>
+
+                    <CheckBox x:Name="cbEstado4" Grid.Row="3" Grid.Column="0"></CheckBox>
+                    <Label Text="Prisa" FontSize="18" Grid.Row="3" Grid.Column="1"></Label>
+                </Grid>
+
+                <Label Text="Identifica el Error" FontAttributes="Bold" FontSize="20" Margin="10,10,10,10">
+                </Label>
+
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="30"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+
+                    <CheckBox x:Name="cbError1" Grid.Row="0" Grid.Column="0"></CheckBox>
+                    <Label Text="Pérdida de equilibrio, tracción y/o agarre" FontSize="18" Grid.Row="0" Grid.Column="1"></Label>
+
+                    <CheckBox x:Name="cbError2" Grid.Row="1" Grid.Column="0"></CheckBox>
+                    <Label Text="En la línea de fuego" FontSize="18" Grid.Row="1" Grid.Column="1"></Label>
+
+                    <CheckBox x:Name="cbError3" Grid.Row="2" Grid.Column="0"></CheckBox>
+                    <Label Text="Mente NO en la tarea" FontSize="18" Grid.Row="2" Grid.Column="1"></Label>
+
+                    <CheckBox x:Name="cbError4" Grid.Row="3" Grid.Column="0"></CheckBox>
+                    <Label Text="Ojos NO en la tarea" FontSize="18" Grid.Row="3" Grid.Column="1"></Label>
+                </Grid>
+
+                <Label Text="Técnica TREC aplicable:" FontAttributes="Bold" FontSize="20" Margin="10,10,10,10">
+                </Label>
+
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="30"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+
+                    <CheckBox x:Name="cbTREC1" Grid.Row="0" Grid.Column="0"></CheckBox>
+                    <Label Text="Observar los patrones que aumentan el riesgo" FontSize="18" Grid.Row="0" Grid.Column="1"></Label>
+
+                    <CheckBox x:Name="cbTREC2" Grid.Row="1" Grid.Column="0"></CheckBox>
+                    <Label Text="Trabajar en mejorar los hábitos" FontSize="18" Grid.Row="1" Grid.Column="1"></Label>
+
+                    <CheckBox x:Name="cbTREC3" Grid.Row="2" Grid.Column="0"></CheckBox>
+                    <Label Text="Analizar los incidentes y errores pequeños" FontSize="18" Grid.Row="2" Grid.Column="1"></Label>
+
+                    <CheckBox x:Name="cbTREC4" Grid.Row="3" Grid.Column="0"></CheckBox>
+                    <Label Text="Concentrarse en el estado" FontSize="18" Grid.Row="3" Grid.Column="1"></Label>
+                </Grid>
+
+                <Button Text="Siguiente" Margin="10,20,10,20" BackgroundColor="#28B463" 
+                FontAttributes="Bold" WidthRequest="120" HorizontalOptions="Center"></Button>
+            
+            </StackLayout>
+            
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

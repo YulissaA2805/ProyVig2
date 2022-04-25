@@ -10,7 +10,11 @@ namespace ProyectoVigilante2
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            MainPage = new NavigationPage(new MainPage())
+            {
+                BarBackgroundColor = Color.FromHex("#28B463"),
+                BarTextColor = Color.Black
+            };
         }
 
         protected override void OnStart()

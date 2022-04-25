@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ProyectoVigilante2.ViewLoginInfo">
+  <ContentView.Content>
+      <StackLayout>
+          <Label Text="Hello Xamarin.Forms!" />
+            <Frame BackgroundColor="Black" Padding="10" CornerRadius="0">
+                <StackLayout>
+                    <Label Text="{Binding Name, StringFormat='Nombre: {0}'}" TextColor="White" FontAttributes="Bold"/>
+                    <Label Text="{Binding Area, StringFormat='Área: {0}'}" TextColor="White"/>
+                    <Label Text="{Binding TL, StringFormat='TL: {0}'}" TextColor="White"/>
+                </StackLayout>
+            </Frame>
+        </StackLayout>
+  </ContentView.Content>
+</ContentView>
