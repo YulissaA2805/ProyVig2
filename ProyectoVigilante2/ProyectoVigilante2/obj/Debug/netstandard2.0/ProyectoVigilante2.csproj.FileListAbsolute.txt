@@ -17,3 +17,6 @@ C:\Users\93764\source\repos\ProyectoVigilante2\ProyectoVigilante2\ProyectoVigila
 C:\Users\93764\source\repos\ProyectoVigilante2\ProyectoVigilante2\ProyectoVigilante2\obj\Debug\netstandard2.0\Page2.xaml.g.cs
 C:\Users\93764\source\repos\ProyectoVigilante2\ProyectoVigilante2\ProyectoVigilante2\obj\Debug\netstandard2.0\SeguridadInseguro\SeguridadInseguroPage.xaml.g.cs
 C:\Users\93764\source\repos\ProyectoVigilante2\ProyectoVigilante2\ProyectoVigilante2\obj\Debug\netstandard2.0\SeguridadSeguro\SeguridadSeguroPage.xaml.g.cs
+C:\Users\93764\source\repos\ProyectoVigilante2\ProyectoVigilante2\ProyectoVigilante2\obj\Debug\netstandard2.0\ProyectoVigilante2.csproj.AssemblyReference.cache
+C:\Users\93764\source\repos\ProyectoVigilante2\ProyectoVigilante2\ProyectoVigilante2\obj\Debug\netstandard2.0\AmbientalInseguro\AmbientalInseguroPage.xaml.g.cs
+C:\Users\93764\source\repos\ProyectoVigilante2\ProyectoVigilante2\ProyectoVigilante2\obj\Debug\netstandard2.0\AmbientalSeguro\AmbientalSeguroPage.xaml.g.cs

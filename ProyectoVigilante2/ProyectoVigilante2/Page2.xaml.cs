@@ -49,19 +49,19 @@ namespace ProyectoVigilante2
         {
             if(comportamiento1 == "Seguridad" && comportamiento2 == "Inseguro")
             {
-                this.Navigation.PushAsync(new SeguridadInseguroPage(_user));//SeguridadInseguroPage
+                this.Navigation.PushAsync(new SeguridadInseguroPage(_user));
             }
             else if(comportamiento1 == "Seguridad" && comportamiento2 == "Seguro")
             {
-
+                this.Navigation.PushAsync(new SeguridadSeguro.SeguridadSeguroPage(_user));
             }
             else if (comportamiento1 == "Ambiental" && comportamiento2 == "Inseguro")
             {
-
+                this.Navigation.PushAsync(new AmbientalInseguro.AmbientalInseguroPage(_user));
             }
             else if (comportamiento1 == "Ambiental" && comportamiento2 == "Seguro")
             {
-
+                this.Navigation.PushAsync(new AmbientalSeguro.AmbientalSeguroPage(_user));
             }
             else
             {

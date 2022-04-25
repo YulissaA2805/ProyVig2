@@ -43,7 +43,8 @@
                 <RadioButton Content="No desinfecta correctamente su área de trabajo"/>
                 <RadioButton Content="No realiza el estornudo de etiqueta"/>
                 <RadioButton Content="Otro" CheckedChanged="RadioButton_CheckedChanged"/>
-                <Entry x:Name="Otro" Keyboard="Text" Completed="Otro_Completed" IsEnabled="False" Margin="25,0,25,0"/>
+                <Entry x:Name="Otro" Keyboard="Text" Completed="Otro_Completed" IsEnabled="False" Margin="25,0,25,0"/>
+
                 </StackLayout>
 
             <Label Text="Identifica el Estado" FontAttributes="Bold" FontSize="20" Margin="10,10,10,10">

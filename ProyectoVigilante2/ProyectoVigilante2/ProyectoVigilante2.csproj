@@ -40,12 +40,11 @@
     <EmbeddedResource Update="SeguridadInseguro\SeguridadInseguroPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
+    <EmbeddedResource Update="SeguridadSeguro\SeguridadSeguroPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
     <EmbeddedResource Update="ViewLoginInfo.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="SeguridadSeguro\" />
   </ItemGroup>
 </Project>

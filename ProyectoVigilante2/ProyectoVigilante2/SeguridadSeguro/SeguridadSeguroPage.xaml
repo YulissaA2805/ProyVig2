@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ProyectoVigilante2.SeguridadSeguro.SeguridadSeguroPage">
+    <NavigationPage.TitleView>
+        <StackLayout>
+            <Label Text="Collins Aerospace - Vigilante" HorizontalTextAlignment="Center" FontSize="15" Margin="0, 0, 75, 0"></Label>
+        </StackLayout>
+    </NavigationPage.TitleView>
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+
+                <Frame BackgroundColor="Black" Padding="10" CornerRadius="0">
+                    <StackLayout>
+                        <Label Text="{Binding Name, StringFormat='Nombre: {0}'}" TextColor="White" FontAttributes="Bold"/>
+                        <Label Text="{Binding Area, StringFormat='Área: {0}'}" TextColor="White"/>
+                        <Label Text="{Binding TL, StringFormat='TL: {0}'}" TextColor="White"/>
+                    </StackLayout>
+                </Frame>
+                <ProgressBar Progress="0.60" ProgressColor="Orange"/>
+
+                <Label FontSize="20" Padding="15,14,15,14" HorizontalTextAlignment="Center">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <FormattedString.Spans>
+                                <Span Text="¿Qué se observó?" FontAttributes="Bold" FontSize="20"/>
+                            </FormattedString.Spans>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+
+                <StackLayout RadioButtonGroup.GroupName="SeguridadInseguroDatos"
+                 Orientation="Vertical">
+                    <RadioButton Content="Usa el equipo de EPP correctamente, completo y bien ajustado"/>
+                    <RadioButton Content="HSe detiene para hablar o mensajear por celular"/>
+                    <RadioButton Content="Conduce de manera segura el vehículo personal o industrial"/>
+                    <RadioButton Content="Mantiene ojos y mente en la tarea 'Safe Start'"/>
+                    <RadioButton Content="Camina de manera segura dentro del estacionamiento y/o edificio"/>
+                    <RadioButton Content="Cuenta con permisos de trabajo de alto riesgo"/>
+                    <RadioButton Content="Realiza correcto lavado de manos/utiliza gel antibacterial"/>
+                    <RadioButton Content="Mantiene la distancia social adecuada (2 metros)"/>
+                    <RadioButton Content="Desinfecta correctamente su área de trabajo"/>
+                    <RadioButton Content="Realiza el estornudo de etiqueta"/>
+                    <RadioButton Content="Otro" CheckedChanged="RadioButton_CheckedChanged"/>
+                    <Entry x:Name="Otro" Keyboard="Text" Completed="Otro_Completed" IsEnabled="False" Margin="25,0,25,0"/>
+
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

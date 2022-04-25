@@ -12,9 +12,12 @@ namespace ProyectoVigilante2.AmbientalSeguro
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class AmbientalSeguroPage : ContentPage
     {
-        public AmbientalSeguroPage()
+        private UserClass _user { get; set; }
+        public AmbientalSeguroPage(UserClass user)
         {
             InitializeComponent();
+            _user = user;
+            BindingContext = _user;
         }
     }
 }
