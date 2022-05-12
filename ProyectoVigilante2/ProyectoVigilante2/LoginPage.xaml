@@ -2,28 +2,28 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="ProyectoVigilante2.MainPage">
-
-    <StackLayout>
-        <Frame BackgroundColor="Black" Padding="24" CornerRadius="0">
-            <Label Text="Collins Aerospace" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
-        </Frame>
-        <Label Text="Bienvenido a Vigilante" TextColor="Black" HorizontalTextAlignment="Center" FontSize="Title" Padding="30,10,30,10"/>
-        <Label Text="El programa para mejorar tu seguridad :)" HorizontalTextAlignment="Center" FontSize="16" Padding="30,0,30,0"/>
-        <Label FontSize="16" Padding="30,24,30,0">
-            <Label.FormattedText>
-                <FormattedString>
-                    <FormattedString.Spans>
-                        <Span Text="Ingresa en tu cuenta para contestar el formulario."/>
-                    </FormattedString.Spans>
-                </FormattedString>
-            </Label.FormattedText>
-        </Label>
-        <Label Text="ID" FontSize="22" FontAttributes="Bold" HorizontalTextAlignment="Start" Margin="50,20,0,0"></Label>
-        <Entry x:Name="entryID" ClearButtonVisibility="WhileEditing" Keyboard="Numeric" MaxLength="12" Margin="50,10,50,20" BackgroundColor="LightGreen"></Entry>
-        <Label Text="Contraseña" FontSize="22" FontAttributes="Bold" HorizontalTextAlignment="Start" Margin="50,20,0,0"></Label>
-        <Entry x:Name="entryPassword" IsPassword="True" ClearButtonVisibility="WhileEditing" Keyboard="Text" Margin="50,10,50,20" BackgroundColor="LightGreen"></Entry>
-        <Button Text="INGRESAR" Margin="10,20,10,0" BackgroundColor="#28B463" 
+    <ScrollView>
+        <StackLayout>
+            <Image Grid.Column="0" Aspect="AspectFit"  HorizontalOptions="CenterAndExpand"
+                                           Source="collins.png"/>
+            <Label Text="Bienvenido a Vigilante" FontAttributes="Bold" HorizontalTextAlignment="Center" FontSize="Title" Padding="30,10,30,10"/>
+            <Label Text="Sé el vigilante de tu seguridad :)" HorizontalTextAlignment="Center" FontSize="16" Padding="30,0,30,0"/>
+            <Label FontSize="16" Padding="30,24,30,0" FontAttributes="Bold">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <FormattedString.Spans>
+                            <Span Text="Ingresa en tu cuenta para contestar el formulario."/>
+                        </FormattedString.Spans>
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+            <Label Text="ID" FontSize="22" FontAttributes="Bold" HorizontalTextAlignment="Start" Margin="50,20,0,0"></Label>
+            <Entry x:Name="entryID" ClearButtonVisibility="WhileEditing" Keyboard="Numeric" MaxLength="12" Margin="50,10,50,20" BackgroundColor="LightGreen"></Entry>
+            <Label Text="Contraseña" FontSize="22" FontAttributes="Bold" HorizontalTextAlignment="Start" Margin="50,20,0,0"></Label>
+            <Entry x:Name="entryPassword" IsPassword="True" ClearButtonVisibility="WhileEditing" Keyboard="Text" Margin="50,10,50,20" BackgroundColor="LightGreen"></Entry>
+            <Label x:Name="linkNoEmpleado" Text="Si eres contratista haz click aquí" FontSize="16" HorizontalTextAlignment="Center" TextDecorations="Underline"/>
+            <Button Text="INGRESAR" Margin="10,20,10,30" BackgroundColor="#28B463" 
                 FontAttributes="Bold" WidthRequest="120" HorizontalOptions="Center" Clicked="Button_Clicked"></Button>
-    </StackLayout>
-
+        </StackLayout>
+    </ScrollView>
 </ContentPage>

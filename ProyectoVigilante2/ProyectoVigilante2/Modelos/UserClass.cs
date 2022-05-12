@@ -2,12 +2,14 @@
 {
     public class UserClass
     {
-        public UserClass()
-        {
-        }
-
         public string Name { get; set; }
         public string Area { get; set; }
         public string TL { get; set; }
+        public bool esContratista { get; set; }
+        public bool retroalimentacion { get; set; }
+
+        public UserClass()
+        {
+        }
     }
 }

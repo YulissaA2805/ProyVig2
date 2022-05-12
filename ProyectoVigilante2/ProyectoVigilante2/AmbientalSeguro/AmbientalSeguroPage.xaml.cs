@@ -42,7 +42,16 @@ namespace ProyectoVigilante2.AmbientalSeguro
 
         private void Button_Clicked(object sender, EventArgs e)
         {
-            this.Navigation.PushAsync(new Page4(_user));
+            if (Otro.IsVisible && Otro.Text == "")
+            {
+                DisplayAlert("Error", "Debe especificar" +
+                    " el comportamiento observado antes de avanzar.", "Aceptar");
+            }
+            else
+            {
+                this.Navigation.PushAsync(new Page4(_user));
+            }
+            
         }
     }
 }

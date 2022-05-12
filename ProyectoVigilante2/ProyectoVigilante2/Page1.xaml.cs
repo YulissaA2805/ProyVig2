@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ProyectoVigilante2.ViewModels;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -18,9 +19,15 @@ namespace ProyectoVigilante2
             InitializeComponent();
             _user = user;
             BindingContext = _user;
+            BindingContext = new Page1ViewModel();
         }
 
         private void Button_Clicked(object sender, EventArgs e)
+        {
+            this.Navigation.PushAsync(new Page2(_user));
+        }
+
+        private void CollectionView_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             this.Navigation.PushAsync(new Page2(_user));
         }

@@ -19,11 +19,30 @@ namespace ProyectoVigilante2
             InitializeComponent();
             _user = user;
             BindingContext = _user;
+
+            if (_user.retroalimentacion)
+            {
+                checkRetroalimentacion.IsChecked = true;
+            }
         }
 
         private void Button_Clicked(object sender, EventArgs e)//ENVIAR
         {
-            DisplayAlert("Enviado con éxito", "Gracias por usar Vigilante.", "OK");
+            if (!_user.retroalimentacion)
+            {
+                DisplayAlert("Retroalimente al compañero", "Antes de enviar los datos, " +
+                    "debe decirle a la persona observada cómo" +
+                    "mejorar su comportamiento para que el incidente no vuelva a ocurrir.", "Aceptar");
+            }
+            else
+            {
+                DisplayAlert("Enviado con éxito", "Gracias por usar Vigilante.", "Aceptar");
+            }
+        }
+
+        private void checkRetroalimentacion_CheckedChanged(object sender, CheckedChangedEventArgs e)
+        {
+            _user.retroalimentacion = ((CheckBox)sender).IsChecked;
         }
     }
 }

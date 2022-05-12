@@ -1,0 +1,1 @@
+C:\Users\93764\source\repos\ProyectoVigilante2\ProyectoVigilante2\ProyectoVigilante2.UWP\ProyectoVigilante2.UWP.csproj;x64

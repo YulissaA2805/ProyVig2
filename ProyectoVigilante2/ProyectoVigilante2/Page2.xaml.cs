@@ -42,6 +42,7 @@ namespace ProyectoVigilante2
             else if (rbtn.Value.Equals("Seguro"))
             {
                 comportamiento2 = "Seguro";
+                _user.retroalimentacion = true;
             }
         }
 
@@ -65,7 +66,7 @@ namespace ProyectoVigilante2
             }
             else
             {
-                DisplayAlert("Error", "Debe especificar el comportamiento antes de avanzar.", "OK");
+                DisplayAlert("Error", "Debe especificar el comportamiento observado antes de avanzar.", "Aceptar");
             }
 
         }

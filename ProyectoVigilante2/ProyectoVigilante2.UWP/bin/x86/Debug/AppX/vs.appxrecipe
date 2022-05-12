@@ -19,7 +19,7 @@
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
     <LayoutDir>C:\Users\93764\source\repos\ProyectoVigilante2\ProyectoVigilante2\ProyectoVigilante2.UWP\bin\x86\Debug\AppX</LayoutDir>
-    <RegisteredManifestChecksum>6E4B57727F1D3B48739977F3C0EB9FB2DC889800AC04406BA7E29975A30E80FF</RegisteredManifestChecksum>
+    <RegisteredManifestChecksum>746ABDD1E61C5511E7EBF6F24DF086F8B9211594F98449F367DC390F2F0EF3EA</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>51c0216f-f878-4bc5-a259-2fa359f62a57_1.0.0.0_x86__yt9kqbn9zpbqj</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>51c0216f-f878-4bc5-a259-2fa359f62a57_yt9kqbn9zpbqj!App</RegisteredUserModeAppID>
     <RegisteredPackageID>51c0216f-f878-4bc5-a259-2fa359f62a57</RegisteredPackageID>
@@ -30,13 +30,13 @@
     <AppXManifest Include="C:\Users\93764\source\repos\ProyectoVigilante2\ProyectoVigilante2\ProyectoVigilante2.UWP\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2022-04-03T06:52:59.463</Modified>
+      <Modified>2022-05-12T17:47:43.544</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\93764\source\repos\ProyectoVigilante2\ProyectoVigilante2\ProyectoVigilante2.UWP\bin\x86\Debug\ProyectoVigilante2.UWP.exe">
       <PackagePath>entrypoint\ProyectoVigilante2.UWP.exe</PackagePath>
-      <Modified>2022-04-03T06:44:09.813</Modified>
+      <Modified>2022-05-12T17:47:42.389</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x86.microsoft.netcore.universalwindowsplatform\6.2.12\runtimes\win10-x86\lib\uap10.0.15138\System.Runtime.dll">
       <PackagePath>System.Runtime.dll</PackagePath>
@@ -68,7 +68,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\93764\source\repos\ProyectoVigilante2\ProyectoVigilante2\ProyectoVigilante2\bin\Debug\netstandard2.0\ProyectoVigilante2.dll">
       <PackagePath>ProyectoVigilante2.dll</PackagePath>
-      <Modified>2022-04-03T06:44:02.762</Modified>
+      <Modified>2022-05-12T18:19:59.484</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\93764\.nuget\packages\win2d.uwp\1.20.0\lib\uap10.0\Microsoft.Graphics.Canvas.winmd">
       <PackagePath>Microsoft.Graphics.Canvas.winmd</PackagePath>
@@ -227,11 +227,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\93764\source\repos\ProyectoVigilante2\ProyectoVigilante2\ProyectoVigilante2.UWP\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2022-04-03T06:52:58.539</Modified>
+      <Modified>2022-05-12T17:47:42.312</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\93764\source\repos\ProyectoVigilante2\ProyectoVigilante2\ProyectoVigilante2.UWP\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2022-04-03T06:52:58.540</Modified>
+      <Modified>2022-05-12T17:47:42.313</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.UniversalCRT.Debug\10.0.19041.0\\redist\Debug\x86\ucrtbased.dll">
       <PackagePath>ucrtbased.dll</PackagePath>
@@ -247,11 +247,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\93764\source\repos\ProyectoVigilante2\ProyectoVigilante2\ProyectoVigilante2.UWP\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2022-04-03T06:44:10.571</Modified>
+      <Modified>2022-05-12T17:47:42.590</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\93764\source\repos\ProyectoVigilante2\ProyectoVigilante2\ProyectoVigilante2.UWP\bin\x86\Debug\Core\ProyectoVigilante2.UWP.exe">
       <PackagePath>ProyectoVigilante2.UWP.exe</PackagePath>
-      <Modified>2022-04-03T06:52:59.455</Modified>
+      <Modified>2022-05-12T17:47:43.539</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

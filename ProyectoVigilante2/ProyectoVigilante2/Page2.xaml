@@ -8,6 +8,7 @@
         </StackLayout>
     </NavigationPage.TitleView>
     <ContentPage.Content>
+      <ScrollView>
         <StackLayout>
 
             <Frame BackgroundColor="Black" Padding="10" CornerRadius="0">
@@ -52,8 +53,10 @@
             </StackLayout>
 
             <Button Text="Siguiente" Margin="10,20,10,20" BackgroundColor="#28B463" 
-                FontAttributes="Bold" WidthRequest="120" HorizontalOptions="Center" Clicked="Button_Clicked"></Button>
+                FontAttributes="Bold" WidthRequest="120" HorizontalOptions="Center" Clicked="Button_Clicked">
+            </Button>
 
         </StackLayout>
+      </ScrollView>
     </ContentPage.Content>
 </ContentPage>

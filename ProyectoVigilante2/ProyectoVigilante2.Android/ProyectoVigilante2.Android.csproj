@@ -83,7 +83,9 @@
     <AndroidResource Include="Resources\mipmap-xxxhdpi\icon.png" />
     <AndroidResource Include="Resources\mipmap-xxxhdpi\launcher_foreground.png" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\collins.png" />
+  </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\ProyectoVigilante2\ProyectoVigilante2.csproj">
       <Project>{7D62AD7F-F861-4B63-B7A0-FD9252A0F36A}</Project>

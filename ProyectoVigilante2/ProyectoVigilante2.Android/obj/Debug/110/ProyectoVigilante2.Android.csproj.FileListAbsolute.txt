@@ -575,3 +575,4 @@ C:\Users\93764\source\repos\ProyectoVigilante2\ProyectoVigilante2\ProyectoVigila
 C:\Users\93764\source\repos\ProyectoVigilante2\ProyectoVigilante2\ProyectoVigilante2.Android\obj\Debug\110\stamp\_GeneratePackageManagerJava.stamp
 C:\Users\93764\source\repos\ProyectoVigilante2\ProyectoVigilante2\ProyectoVigilante2.Android\obj\Debug\110\stamp\_ResolveLibraryProjectImports.stamp
 C:\Users\93764\source\repos\ProyectoVigilante2\ProyectoVigilante2\ProyectoVigilante2.Android\obj\Debug\110\res\drawable\icono.png
+C:\Users\93764\source\repos\ProyectoVigilante2\ProyectoVigilante2\ProyectoVigilante2.Android\obj\Debug\110\res\drawable\collins.png

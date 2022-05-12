@@ -8,6 +8,7 @@
         </StackLayout>
     </NavigationPage.TitleView>
     <ContentPage.Content>
+        <ScrollView Orientation="Vertical">
         <StackLayout>
 
             <Frame BackgroundColor="Black" Padding="10" CornerRadius="0">
@@ -30,21 +31,32 @@
                 </Label.FormattedText>
             </Label>
 
-            <CollectionView SelectionMode="Single">
-                <CollectionView.ItemsSource>
-                    <x:Array Type="{x:Type x:String}">
-                        <x:String>Lugar 1</x:String>
-                        <x:String>Lugar 2</x:String>
-                        <x:String>Lugar 3</x:String>
-                        <x:String>Lugar 4</x:String>
-                    </x:Array>
-                </CollectionView.ItemsSource>
-            </CollectionView>
+                <CollectionView ItemsSource="{Binding Locations}" SelectionMode="Single" ItemsLayout="VerticalGrid, 2"
+                            SelectionChanged="CollectionView_SelectionChanged">
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate>
+                            <Frame Padding="3">
+                                <Grid HeightRequest="200" WidthRequest="200">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="200"></ColumnDefinition>
+                                    </Grid.ColumnDefinitions>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="200"></RowDefinition>
+                                    </Grid.RowDefinitions>
+                                    <Image Grid.Column="0" Aspect="AspectFill" HorizontalOptions="FillAndExpand"
+                                           Source="{Binding Image}"/>
+                                    <Label Grid.Column="0" FontAttributes="Bold" FontSize="Large" 
+                                           VerticalOptions="Center" HorizontalTextAlignment="Center"
+                                           TextColor="Red"
+                                        Text="{Binding Name}"/>
+                                </Grid>
+                            </Frame>
 
-            <Button Text="Siguiente" Margin="10,20,10,20" BackgroundColor="#28B463" 
-                FontAttributes="Bold" WidthRequest="120" HorizontalOptions="Center" Clicked="Button_Clicked"></Button>
-            
-        </StackLayout>
-        
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+                </CollectionView>
+
+            </StackLayout>
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>

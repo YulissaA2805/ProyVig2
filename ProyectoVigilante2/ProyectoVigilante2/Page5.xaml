@@ -17,7 +17,28 @@
                 </StackLayout>
             </Frame>
             <ProgressBar Progress="1" ProgressColor="Orange"/>
-            
+
+            <Label FontSize="20" Padding="15,14,15,14" HorizontalTextAlignment="Center">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <FormattedString.Spans>
+                            <Span Text="Revise los datos antes de enviar:" FontAttributes="Bold" FontSize="20"/>
+                        </FormattedString.Spans>
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+
+            <StackLayout>
+                <Label Text="Lugar" Margin="10,10,10,10" FontSize="Large"/>
+                <Label Text="Comportamiento" />
+                <Label Text="Observaciones" />
+                <Label Text="Responsable" />
+            </StackLayout>
+
+            <Label Text="¿Se tuvo la conversación de retroalimentación con la persona observada?"
+                   FontSize="16" FontAttributes="Bold"></Label>
+            <CheckBox x:Name="checkRetroalimentacion" IsChecked="False" CheckedChanged="checkRetroalimentacion_CheckedChanged"></CheckBox>
+
             <Button Text="ENVIAR" Margin="10,20,10,20" BackgroundColor="#28B463" 
                 FontAttributes="Bold" WidthRequest="120" HorizontalOptions="Center" Clicked="Button_Clicked"></Button>
         </StackLayout>
