@@ -113,16 +113,16 @@
                         <ColumnDefinition Width="30"></ColumnDefinition>
                     </Grid.ColumnDefinitions>
 
-                    <CheckBox x:Name="cbTREC1" Color="Yellow" Grid.Row="0" Grid.Column="0"></CheckBox>
+                    <CheckBox x:Name="cbTREC1" Color="SaddleBrown" Grid.Row="0" Grid.Column="0"></CheckBox>
                     <Label Text="Observar los patrones que aumentan el riesgo" FontSize="17" Grid.Row="0" Grid.Column="1"></Label>
 
-                    <CheckBox x:Name="cbTREC2" Color="Yellow" Grid.Row="1" Grid.Column="0"></CheckBox>
+                    <CheckBox x:Name="cbTREC2" Color="SaddleBrown" Grid.Row="1" Grid.Column="0"></CheckBox>
                     <Label Text="Trabajar en mejorar los hábitos" FontSize="17" Grid.Row="1" Grid.Column="1"></Label>
 
-                    <CheckBox x:Name="cbTREC3" Color="Yellow" Grid.Row="2" Grid.Column="0"></CheckBox>
+                    <CheckBox x:Name="cbTREC3" Color="SaddleBrown" Grid.Row="2" Grid.Column="0"></CheckBox>
                     <Label Text="Analizar los incidentes y errores pequeños" FontSize="17" Grid.Row="2" Grid.Column="1"></Label>
 
-                    <CheckBox x:Name="cbTREC4" Color="Yellow" Grid.Row="3" Grid.Column="0"></CheckBox>
+                    <CheckBox x:Name="cbTREC4" Color="SaddleBrown" Grid.Row="3" Grid.Column="0"></CheckBox>
                     <Label Text="Concentrarse en el estado" FontSize="17" Grid.Row="3" Grid.Column="1"></Label>
                 </Grid>
 

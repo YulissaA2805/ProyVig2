@@ -32,11 +32,22 @@ namespace ProyectoVigilante2.SeguridadSeguro
             if (rbtn.Content.Equals("Otro"))
             {
                 Otro.IsVisible = true;
+                COVID.IsVisible = false;
+                COVID.Text = "";
+            }
+            else if (rbtn.Content.Equals("Incumplimiento en protocolo COVID"))
+            {
+                Otro.IsVisible = false;
+                Otro.Text = "";
+
+                COVID.IsVisible = true;
             }
             else
             {
                 Otro.IsVisible = false;
                 Otro.Text = "";
+                COVID.IsVisible = false;
+                COVID.Text = "";
             }
         }
 
@@ -52,6 +63,11 @@ namespace ProyectoVigilante2.SeguridadSeguro
                 this.Navigation.PushAsync(new Page4(_user));
             }
             
+        }
+
+        private void COVID_Completed(object sender, EventArgs e)
+        {
+            var text_COVID = ((Entry)sender).Text;
         }
     }
 }

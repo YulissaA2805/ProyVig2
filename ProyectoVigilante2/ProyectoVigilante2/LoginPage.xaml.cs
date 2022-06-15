@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ProyectoVigilante2.Modelos;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
@@ -70,7 +71,8 @@ namespace ProyectoVigilante2
             var password = entryPassword.Text;
             if(string.IsNullOrEmpty(id) || string.IsNullOrEmpty(password))
             {
-                DisplayAlert("Error", "Debe ingresar una ID y una contraseña válidos.", "Aceptar");
+                DisplayAlert("Error", "Debe ingresar una ID y una contraseña " +
+                    "para contestar el formulario", "Aceptar");
             }
             else if (esContratista)
             {
@@ -80,11 +82,12 @@ namespace ProyectoVigilante2
                     Area = "",
                     TL = "",
                     esContratista = true,
-                    retroalimentacion = false
+                    retroalimentacion = false,
+                    datosFormUsuario = new DataForm()
                 };
                 this.Navigation.PushAsync(new Page1(user));
             }
-            else
+            else if(id == "12345678" && password == "2022Collins8")
             {
                 var user = new UserClass
                 {
@@ -92,9 +95,14 @@ namespace ProyectoVigilante2
                     Area = "GAM EHS",
                     TL = "Daniel Santamaría Guzman",
                     esContratista = false,
-                    retroalimentacion = false
+                    retroalimentacion = false,
+                    datosFormUsuario = new DataForm()
                 };
                 this.Navigation.PushAsync(new Page1(user));
+            }
+            else
+            {
+                DisplayAlert("Error", "Debe ingresar una ID y una contraseña válidos.", "Aceptar");
             }
             
         }

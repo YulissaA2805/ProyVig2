@@ -37,11 +37,9 @@
                     <RadioButton Content="Conduce de manera segura el vehículo personal o industrial" CheckedChanged="RadioButton_CheckedChanged"/>
                     <RadioButton Content="Mantiene ojos y mente en la tarea 'Safe Start'" CheckedChanged="RadioButton_CheckedChanged"/>
                     <RadioButton Content="Camina de manera segura dentro del estacionamiento y/o edificio" CheckedChanged="RadioButton_CheckedChanged"/>
-                    <RadioButton Content="Cuenta con permisos de trabajo de alto riesgo" CheckedChanged="RadioButton_CheckedChanged"/>
-                    <RadioButton Content="Realiza correcto lavado de manos/utiliza gel antibacterial" CheckedChanged="RadioButton_CheckedChanged"/>
-                    <RadioButton Content="Mantiene la distancia social adecuada (2 metros)" CheckedChanged="RadioButton_CheckedChanged"/>
-                    <RadioButton Content="Desinfecta correctamente su área de trabajo" CheckedChanged="RadioButton_CheckedChanged"/>
-                    <RadioButton Content="Realiza el estornudo de etiqueta" CheckedChanged="RadioButton_CheckedChanged"/>
+                    <RadioButton Content="Cuenta con permisos de trabajo de alto riesgo/JHA on the fly" CheckedChanged="RadioButton_CheckedChanged"/>
+                    <RadioButton Content="Incumplimiento en protocolo COVID" CheckedChanged="RadioButton_CheckedChanged"/>
+                    <Entry x:Name="COVID" Keyboard="Text" Completed="COVID_Completed"  IsVisible="False" Margin="25,0,25,0"/>
                     <RadioButton Content="Otro" CheckedChanged="RadioButton_CheckedChanged"/>
                     <Entry x:Name="Otro" Keyboard="Text" Completed="Otro_Completed" IsVisible="False" Margin="25,0,25,0"/>
                 </StackLayout>

@@ -13,9 +13,9 @@
 
             <Frame BackgroundColor="Black" Padding="10" CornerRadius="0">
                 <StackLayout>
-                    <Label Text="{Binding Name, StringFormat='Nombre: {0}'}" TextColor="White" FontAttributes="Bold"/>
-                    <Label Text="{Binding Area, StringFormat='Área: {0}'}" TextColor="White"/>
-                    <Label Text="{Binding TL, StringFormat='TL: {0}'}" TextColor="White"/>
+                    <Label x:Name="NombreEmpleado" TextColor="White" FontAttributes="Bold"/>
+                    <Label x:Name="AreaEmpleado" TextColor="White"/>
+                    <Label x:Name="TLEmpleado" TextColor="White"/>
                 </StackLayout>
             </Frame>
 
@@ -44,10 +44,10 @@
                                         <RowDefinition Height="200"></RowDefinition>
                                     </Grid.RowDefinitions>
                                     <Image Grid.Column="0" Aspect="AspectFill" HorizontalOptions="FillAndExpand"
-                                           Source="{Binding Image}"/>
-                                    <Label Grid.Column="0" FontAttributes="Bold" FontSize="Large" 
+                                           Source="{Binding Image}" BackgroundColor="{Binding Color}"/>
+                                    <Label Grid.Column="0" FontAttributes="Bold" FontSize="Medium" 
                                            VerticalOptions="Center" HorizontalTextAlignment="Center"
-                                           TextColor="Red"
+                                           TextColor="White" FontFamily="Roboto"
                                         Text="{Binding Name}"/>
                                 </Grid>
                             </Frame>

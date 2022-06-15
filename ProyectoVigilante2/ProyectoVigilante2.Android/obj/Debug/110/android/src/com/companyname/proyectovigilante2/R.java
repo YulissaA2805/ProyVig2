@@ -6527,6 +6527,7 @@ public final class R {
     public static final int test_custom_background=0x7f07008f;
     public static final int tooltip_frame_dark=0x7f070090;
     public static final int tooltip_frame_light=0x7f070091;
+    public static final int vigilante_beta_icon=0x7f070092;
   }
   public static final class id {
     public static final int ALT=0x7f080000;

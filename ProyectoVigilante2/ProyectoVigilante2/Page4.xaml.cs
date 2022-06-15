@@ -19,11 +19,31 @@ namespace ProyectoVigilante2
             InitializeComponent();
             _user = user;
             BindingContext = _user;
+
+            idPersona.Text = "";
+            nombrePersona.Text = "";
         }
 
         private void Button_Clicked(object sender, EventArgs e)
         {
-            this.Navigation.PushAsync(new Page5(_user));
+            if(idPersona.Text != "")
+            {
+                _user.datosFormUsuario.EmpleadoVigilado = idPersona.Text;
+                _user.datosFormUsuario.NombreVisitanteOContratista = "";
+                this.Navigation.PushAsync(new Page5(_user));
+            }
+            else if(nombrePersona.Text != "")
+            {
+                _user.datosFormUsuario.NombreVisitanteOContratista = nombrePersona.Text;
+                _user.datosFormUsuario.EmpleadoVigilado = "";
+                this.Navigation.PushAsync(new Page5(_user));
+            }
+            else
+            {
+                DisplayAlert("Error", "Debe especificar el ID o nombre de la persona antes de avanzar." +
+                    " Si no lo sabe, pregúntele a la persona en cuestión.", "Aceptar");
+            }
+            
         }
 
         private void tipoPersona_CheckedChanged(object sender, CheckedChangedEventArgs e)
@@ -32,22 +52,36 @@ namespace ProyectoVigilante2
             {
                 idPersona.IsVisible = false;
                 nombrePersona.IsVisible = true;
+
+                idPersona.Text = "";
             }
             else
             {
                 idPersona.IsVisible = true;
                 nombrePersona.IsVisible = false;
+
+                nombrePersona.Text = "";
             }
         }
 
         private void idPersona_Completed(object sender, EventArgs e)
         {
-            var text_idPersona = ((Entry)sender).Text;
+            _user.datosFormUsuario.EmpleadoVigilado = ((Entry)sender).Text;
         }
 
         private void nombrePersona_Completed(object sender, EventArgs e)
         {
-            var text_nombrePersona = ((Entry)sender).Text;
+            _user.datosFormUsuario.NombreVisitanteOContratista = ((Entry)sender).Text;
+        }
+
+        private void nombrePersona_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            _user.datosFormUsuario.NombreVisitanteOContratista = ((Entry)sender).Text;
+        }
+
+        private void idPersona_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            _user.datosFormUsuario.EmpleadoVigilado = ((Entry)sender).Text;
         }
     }
 }

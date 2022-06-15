@@ -17,202 +17,242 @@ namespace ProyectoVigilante2.ViewModels
                 new Location
                 {
                     Name = "ACE",
-                    Image = ""
+                    Image = "icono.png",
+                    Color = "#D35400"
                 },
                 new Location
                 {
                     Name = "ACOUSTIC BOND",
-                    Image = "icono.png"
+                    Image = "icono.png",
+                    Color = "#DC7633"
                 },
                 new Location
                 {
-                    Name = "BOND CCA CLEAN ROOM",
-                    Image = "icono.png"
+                    Name = "BOND CCA\nCLEAN ROOM",
+                    Image = "icono.png",
+                    Color = "#E67E22"
                 },
                 new Location
                 {
                     Name = "BOND POST BOND",
-                    Image = "icono.png"
+                    Image = "icono.png",
+                    Color = "#EB984E"
                 },
                 new Location
                 {
                     Name = "BRAKE ROOM",
-                    Image = "icono.png"
+                    Image = "icono.png",
+                    Color = "#F39C12"
                 },
                 new Location
                 {
                     Name = "EH&S",
-                    Image = "icono.png"
+                    Image = "icono.png",
+                    Color = "#F5B041"
                 },
                 new Location
                 {
                     Name = "ENGINEERING",
-                    Image = "icono.png"
+                    Image = "icono.png",
+                    Color = "#F1C40F"
                 },
                 new Location
                 {
-                    Name = "ENGINEERING DESIGN",
-                    Image = "icono.png"
+                    Name = "ENGINEERING\nDESIGN",
+                    Image = "icono.png",
+                    Color = "#F4D03F"
                 },
                 new Location
                 {
                     Name = "FACILITIES",
-                    Image = "icono.png"
+                    Image = "icono.png",
+                    Color = "#D35400"
                 },
                 new Location
                 {
                     Name = "FINANCE",
-                    Image = "icono.png"
+                    Image = "icono.png",
+                    Color = "#DC7633"
                 },
                 new Location
                 {
                     Name = "GTF",
-                    Image = "icono.png"
+                    Image = "icono.png",
+                    Color = "#E67E22"
                 },
                 new Location
                 {
-                    Name = "HUMAN RESOURCES",
-                    Image = "icono.png"
+                    Name = "HUMAN\nRESOURCES",
+                    Image = "icono.png",
+                    Color = "#EB984E"
                 },
                 new Location
                 {
                     Name = "HYDRO PRESS",
-                    Image = "icono.png"
+                    Image = "icono.png",
+                    Color = "#F39C12"
                 },
                 new Location
                 {
                     Name = "MAINTENANCE",
-                    Image = "icono.png"
+                    Image = "icono.png",
+                    Color = "#F5B041"
                 },
                 new Location
                 {
                     Name = "MANAGEMENT",
-                    Image = "icono.png"
+                    Image = "icono.png",
+                    Color = "#F1C40F"
                 },
                 new Location
                 {
-                    Name = "MATERIALS OPERATIONS",
-                    Image = "icono.png"
+                    Name = "MATERIALS\nOPERATIONS",
+                    Image = "icono.png",
+                    Color = "#F4D03F"
                 },
                 new Location
                 {
                     Name = "NOSELIPS",
-                    Image = "icono.png"
+                    Image = "icono.png",
+                    Color = "#D35400"
                 },
                 new Location
                 {
                     Name = "NOSELIPS 360",
-                    Image = "icono.png"
+                    Image = "icono.png",
+                    Color = "#DC7633"
                 },
                 new Location
                 {
                     Name = "NUT PLATES",
-                    Image = "icono.png"
+                    Image = "icono.png",
+                    Color = "#E67E22"
                 },
                 new Location
                 {
                     Name = "ONLOAD",
-                    Image = "icono.png"
+                    Image = "icono.png",
+                    Color = "#EB984E"
                 },
                 new Location
                 {
                     Name = "PROCESSING",
-                    Image = "icono.png"
+                    Image = "icono.png",
+                    Color = "#F39C12"
                 },
                 new Location
                 {
-                    Name = "PRODUCTION CONTROL",
-                    Image = "icono.png"
+                    Name = "PRODUCTION\nCONTROL",
+                    Image = "icono.png",
+                    Color = "#F5B041"
                 },
                 new Location
                 {
                     Name = "PURCHASING",
-                    Image = "icono.png"
+                    Image = "icono.png",
+                    Color = "#F1C40F"
                 },
                 new Location
                 {
                     Name = "QUALITY",
-                    Image = "icono.png"
+                    Image = "icono.png",
+                    Color = "#F4D03F"
                 },
                 new Location
                 {
                     Name = "SECURITY",
-                    Image = "icono.png"
+                    Image = "icono.png",
+                    Color = "#D35400"
                 },
                 new Location
                 {
                     Name = "SHIPPING",
-                    Image = "icono.png"
+                    Image = "icono.png",
+                    Color = "#DC7633"
                 },
                 new Location
                 {
                     Name = "SPF",
-                    Image = "icono.png"
+                    Image = "icono.png",
+                    Color = "#E67E22"
                 },
                 new Location
                 {
                     Name = "STRETCH BEND",
-                    Image = "icono.png"
+                    Image = "icono.png",
+                    Color = "#EB984E"
                 },
                 new Location
                 {
                     Name = "TOOL SHOP",
-                    Image = "icono.png"
+                    Image = "icono.png",
+                    Color = "#F39C12"
                 },
                 new Location
                 {
                     Name = "TR GE",
-                    Image = "icono.png"
+                    Image = "icono.png",
+                    Color = "#F5B041"
                 },
                 new Location
                 {
                     Name = "TR RR",
-                    Image = "icono.png"
+                    Image = "icono.png",
+                    Color = "#F1C40F"
                 },
                 new Location
                 {
                     Name = "COMEDOR",
-                    Image = "icono.png"
+                    Image = "icono.png",
+                    Color = "#F4D03F"
                 },
                 new Location
                 {
                     Name = "ESTACIONAMIENTO",
-                    Image = "icono.png"
+                    Image = "icono.png",
+                    Color = "#D35400"
                 },
                 new Location
                 {
-                    Name = "OFICINAS PLANTA ALTA",
-                    Image = "icono.png"
+                    Name = "OFICINAS\nPLANTA ALTA",
+                    Image = "icono.png",
+                    Color = "#DC7633"
                 },
                 new Location
                 {
-                    Name = "OFICINAS PLANTA BAJA",
-                    Image = "icono.png"
+                    Name = "OFICINAS\nPLANTA BAJA",
+                    Image = "icono.png",
+                    Color = "#E67E22"
                 },
                 new Location
                 {
                     Name = "PATIOS",
-                    Image = "icono.png"
+                    Image = "icono.png",
+                    Color = "#EB984E"
                 },
                 new Location
                 {
-                    Name = "PASILLOS PRODUCCIÓN",
-                    Image = "icono.png"
+                    Name = "PASILLOS\nPRODUCCIÓN",
+                    Image = "icono.png",
+                    Color = "#F39C12"
                 },
                 new Location
                 {
-                    Name = "SALAS DE REUNIONES",
-                    Image = "icono.png"
+                    Name = "SALAS DE\nREUNIONES",
+                    Image = "icono.png",
+                    Color = "#F5B041"
                 },
                 new Location
                 {
-                    Name = "BIZJET OPERATIONS",
-                    Image = "icono.png"
+                    Name = "BIZJET\nOPERATIONS",
+                    Image = "icono.png",
+                    Color = "#F1C40F"
                 },
                 new Location
                 {
                     Name = "SPRINGSTEEN",
-                    Image = "icono.png"
+                    Image = "icono.png",
+                    Color = "#F4D03F"
                 }
             };
         }

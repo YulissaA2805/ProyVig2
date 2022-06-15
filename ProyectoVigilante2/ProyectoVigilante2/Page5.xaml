@@ -8,7 +8,8 @@
         </StackLayout>
     </NavigationPage.TitleView>
     <ContentPage.Content>
-        <StackLayout>
+        <ScrollView>
+            <StackLayout>
             <Frame BackgroundColor="Black" Padding="10" CornerRadius="0">
                 <StackLayout>
                     <Label Text="{Binding Name, StringFormat='Nombre: {0}'}" TextColor="White" FontAttributes="Bold"/>
@@ -29,18 +30,20 @@
             </Label>
 
             <StackLayout>
-                <Label Text="Lugar" Margin="10,10,10,10" FontSize="Large"/>
-                <Label Text="Comportamiento" />
-                <Label Text="Observaciones" />
-                <Label Text="Responsable" />
+                <Label x:Name="FormLugar"  Text="Lugar" Margin="10,10,10,10" FontSize="Medium"/>
+                <Label x:Name="FormComp" Text="Comportamiento" Margin="10,10,10,10" FontSize="Medium"/>
+                <Label x:Name="FormCond" Text="Condición" Margin="10,10,10,10" FontSize="Medium"/>
+                <Label x:Name="FormObserv" Text="Observaciones" Margin="10,10,10,10" FontSize="Medium"/>
+                <Label x:Name="FormResponsable" Text="Responsable" Margin="10,10,10,10" FontSize="Medium"/>
             </StackLayout>
 
-            <Label Text="¿Se tuvo la conversación de retroalimentación con la persona observada?"
-                   FontSize="16" FontAttributes="Bold"></Label>
+            <Label x:Name="labelRetroalimentacion" Text="¿Se tuvo la conversación de retroalimentación con la persona observada?"
+                   FontSize="16" FontAttributes="Bold" Margin="10,10,10,10"></Label>
             <CheckBox x:Name="checkRetroalimentacion" IsChecked="False" CheckedChanged="checkRetroalimentacion_CheckedChanged"></CheckBox>
 
             <Button Text="ENVIAR" Margin="10,20,10,20" BackgroundColor="#28B463" 
                 FontAttributes="Bold" WidthRequest="120" HorizontalOptions="Center" Clicked="Button_Clicked"></Button>
-        </StackLayout>
+            </StackLayout>
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>

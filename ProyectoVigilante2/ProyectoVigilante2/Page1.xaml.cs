@@ -18,8 +18,11 @@ namespace ProyectoVigilante2
         {
             InitializeComponent();
             _user = user;
-            BindingContext = _user;
+            //BindingContext = _user;
             BindingContext = new Page1ViewModel();
+            NombreEmpleado.Text = "Nombre: "+_user.Name;
+            AreaEmpleado.Text = "Área: " + _user.Area;
+            TLEmpleado.Text = "TL: " + _user.TL;
         }
 
         private void Button_Clicked(object sender, EventArgs e)
@@ -29,7 +32,10 @@ namespace ProyectoVigilante2
 
         private void CollectionView_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            this.Navigation.PushAsync(new Page2(_user));
+            _user.datosFormUsuario.AreaObservada = "";
+            //string current = e.CurrentSelection.FirstOrDefault() as Locations;
+            this.Navigation.PushAsync(new ComportamientoOCondicion(_user));
+            
         }
     }
 }

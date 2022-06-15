@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ProyectoVigilante2.ComportamientoOCondicion">
+    <ContentPage.Content>
+        <ScrollView>
+        <StackLayout>
+            <Frame BackgroundColor="Black" Padding="10" CornerRadius="0">
+                <StackLayout>
+                    <Label Text="{Binding Name, StringFormat='Nombre: {0}'}" TextColor="White" FontAttributes="Bold"/>
+                    <Label Text="{Binding Area, StringFormat='Área: {0}'}" TextColor="White"/>
+                    <Label Text="{Binding TL, StringFormat='TL: {0}'}" TextColor="White"/>
+                </StackLayout>
+            </Frame>
+            <ProgressBar Progress="0.40" ProgressColor="Orange"/>
+
+                <Label FontSize="20" Padding="15,14,15,14" HorizontalTextAlignment="Center">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <FormattedString.Spans>
+                                <Span Text="¿Comportamiento o condición?" FontAttributes="Bold" FontSize="20"/>
+                            </FormattedString.Spans>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+                <StackLayout
+                    x:Name="radioGroupCompCond" Orientation="Vertical">
+                    <RadioButton Value="Comportamiento" Content="Comportamiento" CheckedChanged="RadioButton_CheckedChanged"/>
+                    <RadioButton Value="Condicion" Content="Condición" CheckedChanged="RadioButton_CheckedChanged"/>
+                    <Picker x:Name="pickerCondicion" Title="Elija la condición" 
+                            TitleColor="Red" IsVisible="False" SelectedIndexChanged="pickerCondicion_SelectedIndexChanged">
+                        <Picker.Items>
+                            <x:String>Gas comprimido/químico</x:String>
+                            <x:String>Espacio confinado</x:String>
+                            <x:String>Cortada/Punción</x:String>
+                            <x:String>Energía eléctrica/peligrosa/LOTO</x:String>
+                            <x:String>Ambiental</x:String>
+                            <x:String>Fuego/Explosión/Seguridad</x:String>
+                            <x:String>Cumplimiento normativo/legal</x:String>
+                            <x:String>Protección de maquinaria</x:String>
+                            <x:String>Manejo y almacenamiento de materiales</x:String>
+                            <x:String>Vehículo de motor/peatón</x:String>
+                            <x:String>Ruido</x:String>
+                            <x:String>Otro</x:String>
+                            <x:String>Peatonal</x:String>
+                            <x:String>Vehículo industrial motorizado</x:String>
+                            <x:String>Resbalones, tropiezos, caídas</x:String>
+                            <x:String>Derrame/Descarga</x:String>
+                            <x:String>NEARHIT</x:String>
+                            <x:String>Peligro de radiación</x:String>
+                            <x:String>Sugerencia de seguridad</x:String>
+                            <x:String>Animales</x:String>
+                            <x:String>Patógeno biológico/en la sangre</x:String>
+                            <x:String>Excavación (derrumbe/colapso)</x:String>
+                            <x:String>Golpeado contra</x:String>
+                            <x:String>Poca visibilidad</x:String>
+                            <x:String>Punto de pellizco o golpe</x:String>
+                        </Picker.Items>
+                    </Picker>
+                </StackLayout>
+
+                <Button Text="Siguiente" Margin="10,20,10,20" BackgroundColor="#28B463" 
+                FontAttributes="Bold" WidthRequest="120" HorizontalOptions="Center" Clicked="Button_Clicked">
+                </Button>
+
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

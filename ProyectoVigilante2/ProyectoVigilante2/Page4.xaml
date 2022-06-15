@@ -30,9 +30,11 @@
 
             <Label Text="Visitante o contratista"></Label>
             <CheckBox x:Name="tipoPersona" Color="Orange" CheckedChanged="tipoPersona_CheckedChanged"></CheckBox>
-            <Entry x:Name="idPersona" Placeholder="ID del empleado" Keyboard="Text" Margin="25,0,25,0" Completed="idPersona_Completed"/>
+            <Entry x:Name="idPersona" Placeholder="ID del empleado" Keyboard="Text" Margin="25,0,25,0" 
+                   Completed="idPersona_Completed" TextChanged="idPersona_TextChanged"/>
             <Entry x:Name="nombrePersona" Placeholder="Nombre de la persona observada" Keyboard="Text" 
-                   Margin="25,0,25,0" IsVisible="False" Completed="nombrePersona_Completed"/>
+                   Margin="25,0,25,0" IsVisible="False" 
+                   Completed="nombrePersona_Completed" TextChanged="nombrePersona_TextChanged"/>
 
             <Button Text="Siguiente" Margin="10,20,10,20" BackgroundColor="#28B463" 
                 FontAttributes="Bold" WidthRequest="120" HorizontalOptions="Center" Clicked="Button_Clicked"></Button>

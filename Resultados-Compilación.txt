@@ -1,0 +1,4 @@
+﻿Operación Compilar iniciada..
+1>------ Operación Compilar iniciada: proyecto: ProyectoVigilante2.Android, configuración: Debug Any CPU ------
+1>C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Xamarin\Android\Xamarin.Android.Common.targets(449,3): error XA1011: Ya no se admite el uso de ProGuard con el compilador D8 DEX. Establezca el reductor de código en "r8" en las páginas de propiedades del proyecto de Visual Studio o edite el archivo de proyecto en un editor de texto y establezca la propiedad "AndroidLinkTool" de MSBuild en "r8".
+========== Compilar: 0 correctos, 1 incorrectos, 1 actualizados, 0 omitidos ==========

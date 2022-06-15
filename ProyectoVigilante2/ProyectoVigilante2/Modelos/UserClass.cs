@@ -1,4 +1,6 @@
-﻿namespace ProyectoVigilante2
+﻿using ProyectoVigilante2.Modelos;
+
+namespace ProyectoVigilante2
 {
     public class UserClass
     {
@@ -7,6 +9,7 @@
         public string TL { get; set; }
         public bool esContratista { get; set; }
         public bool retroalimentacion { get; set; }
+        public DataForm datosFormUsuario;
 
         public UserClass()
         {
